@@ -6,7 +6,7 @@
 
 VPN-клиент для Windows и Android с управлением подписками, гибкой маршрутизацией и адаптивной настройкой соединения.
 
-[**Скачать для Windows**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.3/ZaNet-Connect-Setup-Windows-x64.exe) · [**Скачать для Android**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.3/ZaNet-Connect-Android-arm64.apk) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
+[**Скачать для Windows**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Setup-Windows-x64.exe) · [**Скачать для Android**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Android-arm64.apk) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
 
 </div>
 
@@ -20,7 +20,7 @@ VPN-клиент для Windows и Android с управлением подпи�
 |:--|:--:|:--:|
 | Импорт и обновление подписок | ✓ | ✓ |
 | Поиск и проверка серверов | ✓ | ✓ |
-| Настройки DNS и маршрутизации | ✓ | ✓ |
+| Настройки DNS и маршрутизации | ✓ | ✓ |`r`n| Маршруты приложений Proxy / Direct / Block | — | ✓ |
 | Подбор параметров соединения | ✓ | ✓ |
 | Темы оформления и анимации | ✓ | ✓ |
 | Уведомления об обновлениях | ✓ | ✓ |
@@ -29,7 +29,7 @@ VPN-клиент для Windows и Android с управлением подпи�
 
 ## Адаптивная настройка
 
-На Android клиент сначала проверяет подключение с параметрами исходного профиля. Если соединение недоступно, запускается подбор альтернативных настроек. Он учитывает DNS, IP-стратегию и параметры туннеля, а результат подтверждается передачей данных через реальный VPN-туннель. Непроверенные настройки не применяются.
+На Android клиент перед первым подключением выполняет короткую проверку выбранного профиля через YouTube. Если профиль доступен, VPN запускается сразу. Если проверка не пройдена, клиент предлагает выбрать другой сервер или вручную запустить подбор альтернативных настроек. Подбор учитывает DNS, IP-стратегию и параметры туннеля, а результат подтверждается передачей данных через реальный VPN-туннель.
 
 Подбор можно запустить вручную кнопкой **«Подобрать под мою сеть»**. Доступность соединения зависит от сети и сервера подписки.
 
@@ -64,15 +64,15 @@ VPN-клиент для Windows и Android с управлением подпи�
 
 ### Windows
 
-1. Скачайте [установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.3/ZaNet-Connect-Setup-Windows-x64.exe) и выполните установку.
+1. Скачайте [установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Setup-Windows-x64.exe) и выполните установку.
 2. Запустите ZaNet Connect и добавьте ссылку подписки.
 3. Выберите сервер и нажмите кнопку подключения.
 
-Для установки через MSI доступен [отдельный пакет](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.3/ZaNet-Connect-Windows-x64.msi). Сборка предназначена для Windows x64.
+Для установки через MSI доступен [отдельный пакет](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Windows-x64.msi). Сборка предназначена для Windows x64.
 
 ### Android
 
-1. Скачайте [APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.3/ZaNet-Connect-Android-arm64.apk). Требуется **Android 7.0 или новее**, ARM64 или x86_64.
+1. Скачайте [APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Android-arm64.apk). Требуется **Android 7.0 или новее**, ARM64.
 2. Разрешите установку из выбранного браузера или файлового менеджера, если Android запросит это разрешение.
 3. Добавьте подписку, нажмите подключение и подтвердите системный запрос на создание VPN.
 
@@ -95,3 +95,4 @@ ZaNet Connect — клиент для подключения к серверам
 Каждый релиз содержит файл `SHA256SUMS.txt` с контрольными суммами установщиков и его RSA-подпись `SHA256SUMS.txt.sig`.
 
 Этот репозиторий предназначен для распространения готовых сборок и документации. Лицензии сторонних компонентов сохраняют действие; соответствующие уведомления и исходники модифицированных сторонних ядер включены в Windows-дистрибутив.
+
