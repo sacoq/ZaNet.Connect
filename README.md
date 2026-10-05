@@ -6,7 +6,7 @@
 
 VPN-клиент для Windows и Android с управлением подписками, гибкой маршрутизацией и адаптивной настройкой соединения.
 
-[**Скачать для Windows**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Setup-Windows-x64.exe) · [**Скачать для Android**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Android-arm64.apk) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
+[**Скачать для Windows**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Setup-Windows-x64.exe) · [**Скачать для Android**](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Android-arm64.apk) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
 
 </div>
 
@@ -65,15 +65,15 @@ VPN-клиент для Windows и Android с управлением подпи�
 
 ### Windows
 
-1. Скачайте [установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Setup-Windows-x64.exe) и выполните установку.
+1. Скачайте [установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Setup-Windows-x64.exe) и выполните установку.
 2. Запустите ZaNet Connect и добавьте ссылку подписки.
 3. Выберите сервер и нажмите кнопку подключения.
 
-Для установки через MSI доступен [отдельный пакет](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Windows-x64.msi). Сборка предназначена для Windows x64.
+Для установки через MSI доступен [отдельный пакет](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Windows-x64.msi). Сборка предназначена для Windows x64.
 
 ### Android
 
-1. Скачайте [APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.4/ZaNet-Connect-Android-arm64.apk). Требуется **Android 7.0 или новее**, ARM64.
+1. Скачайте [APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Android-arm64.apk). Требуется **Android 7.0 или новее**, ARM64.
 2. Разрешите установку из выбранного браузера или файлового менеджера, если Android запросит это разрешение.
 3. Добавьте подписку, нажмите подключение и подтвердите системный запрос на создание VPN.
 
