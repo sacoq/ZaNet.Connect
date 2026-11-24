@@ -6,17 +6,17 @@
 
 VPN-клиент для Windows, Android и Linux. Подключайтесь по подписке или отдельному ключу, управляйте маршрутизацией и проверяйте соединение прямо в приложении.
 
-[**3.0.6**](https://github.com/sacoq/ZaNet.Connect/releases/tag/v3.0.6-release) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
+[**Последний релиз**](https://github.com/sacoq/ZaNet.Connect/releases/latest) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
 
 </div>
 
-## Скачать 3.0.6
+## Скачать
 
 | Платформа | Сборка | Требования |
 | :--- | :--- | :--- |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн EXE · 139,3 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Offline.exe) · [Сетевой EXE · 6,8 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Online.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн-установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Windows-Offline.exe) · [Сетевой установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Setup-Windows-x64.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Linux-x64.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Linux-arm64.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
 Офлайн EXE включает приложение, ядра и геобазы для всех трёх архитектур. Для установки нужна подходящая версия .NET Framework в Windows. Сетевой EXE загружает тот же офлайн-пакет с проверкой SHA‑256 и при необходимости предлагает скачать .NET с сайта Microsoft.
 
