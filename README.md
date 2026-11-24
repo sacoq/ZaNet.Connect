@@ -14,9 +14,11 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 | Платформа | Сборка | VirusTotal | Требования |
 | :--- | :--- | :--- | :--- |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Универсальный установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r14.exe) | [EXE](https://www.virustotal.com/gui/file/5a5fe968156cafd400f539b432c61b0d7d4494d7911769adb003faa9d34033e4/detection) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Сетевой EXE · 6,83 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Setup.exe) · [Офлайн EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r15.exe) | [Офлайн EXE](https://www.virustotal.com/gui/file/4c3d2346b1413e3fd2ae61ca695bb652a2e592e59409b13977718cd9962967c5/detection) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | [APK](https://www.virustotal.com/gui/file/b2a44f49101d295d94d03bad39fbb57edd8cd07114046357e45708d2a4cf9481/detection) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | [x64](https://www.virustotal.com/gui/file/266df6185d9dc2051c335ae88c325362de114d94a80548c4a467fbd85eb65ce3/detection) · [ARM64](https://www.virustotal.com/gui/file/253adcf3fc03c0cca4c2c3733962bf59c6a8dfd1649ca667ddb71cf06e455f32/detection) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
+
+Сетевой EXE загружает с GitHub архив приложения (181 МиБ) и проверяет SHA‑256. .NET Framework скачивается с Microsoft, только если его нет. Офлайн EXE содержит приложение и оба пакета .NET.
 
 Ссылки VirusTotal ведут на страницы файлов по SHA‑256.
 
