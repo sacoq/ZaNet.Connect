@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/brand/zanet-connect.png" width="88" height="88" alt="">
+
 # ZaNet Connect
 
 VPN-клиент для Windows, Android и Linux. Подключайтесь по подписке или отдельному ключу, управляйте маршрутизацией и проверяйте соединение прямо в приложении.
@@ -12,9 +14,9 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 | Платформа | Сборка | Требования |
 | :--- | :--- | :--- |
-| Windows | [Универсальный установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r14.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
-| Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
-| Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Универсальный установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r14.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
 Установите 3.0.6 вручную. На Windows и Android её можно установить рядом с 3.0.5. У 3.0.6 своё хранилище профилей. При первом запуске импортируйте исходную ссылку подписки.
 
@@ -26,6 +28,23 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 - **Проверки серверов в Windows выполняются параллельно.** Отдельный пинг больше не задерживает выбор другого сервера. Быстрый подбор проверяет короткий список вариантов, а полный режим запускается отдельно. При смене параметров Xray сохраняются настройки Mihomo.
 - **Диагностика подключения.** Видны активное ядро и результаты проверок. На Windows для совместимых профилей отображается выход последней проверки через балансер. Запись адресов назначений включается по желанию. При экспорте исключаются ключи, ссылки подписок и сырые конфиги.
 - **Импорт исходного JSON Xray.** В отдельном режиме ядро получает JSON или JSONC с заданными в нём маршрутизацией, DNS и входящими портами. Android использует этот режим в приложении на переднем плане. Системный VPN на Android работает с управляемыми профилями.
+
+## Скриншоты
+
+### Windows
+
+<img src="docs/screenshots/windows-3.0.6.png" width="880" alt="ZaNet Connect 3.0.6 на Windows. Список серверов и активное подключение">
+
+### Android
+
+<p>
+  <img src="docs/screenshots/android-3.0.6.png" width="260" alt="ZaNet Connect 3.0.6 на Android. Экран подключения и список серверов">
+  <img src="docs/screenshots/android-settings-3.0.6.png" width="260" alt="ZaNet Connect 3.0.6 на Android. Разделы настроек">
+</p>
+
+### Linux
+
+<img src="docs/screenshots/linux-3.0.6.png" width="760" alt="ZaNet Connect 3.0.6 на Linux. Список серверов">
 
 ## Подключение
 
