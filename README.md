@@ -14,7 +14,7 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 | Платформа | Сборка | Требования |
 | :--- | :--- | :--- |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн EXE · 139,2 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Offline.exe) · [Сетевой EXE · 6,7 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Online.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн EXE · 139,3 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Offline.exe) · [Сетевой EXE · 6,8 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Online.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
@@ -63,7 +63,11 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 ### Windows
 
-Оба установщика определяют архитектуру и выбирают подходящее ядро. Полный системный туннель может потребовать разрешения администратора. У установщика 3.0.6 нет подписи Authenticode, поэтому Windows может показать предупреждение о неизвестном издателе. Запуск приложения, импорт и локальный прокси доступны от обычного пользователя.
+Оба установщика определяют архитектуру и выбирают подходящее ядро.
+
+В обоих Windows-установщиках можно выбрать папку и следить за ходом установки. В конце доступны ярлыки в «Пуск» и на рабочем столе, а также запуск приложения. Клиент по умолчанию запрашивает права администратора при новом запуске. Ссылки `zanet://` добавляют подписку в уже открытый клиент.
+
+Установщики 3.0.6 используют внутреннюю проверку SHA‑256 и целостности файлов. Windows может показать предупреждение о неизвестном издателе, поскольку у EXE нет подписи Authenticode.
 
 ### Android
 
