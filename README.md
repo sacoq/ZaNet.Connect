@@ -4,19 +4,19 @@
 
 VPN-клиент для Windows, Android и Linux. Подключайтесь по подписке или отдельному ключу, управляйте маршрутизацией и проверяйте соединение прямо в приложении.
 
-[**3.0.6 Preview**](https://github.com/sacoq/ZaNet.Connect/releases/tag/v3.0.6-preview) · [**Стабильная 3.0.5**](https://github.com/sacoq/ZaNet.Connect/releases/tag/v3.0.5) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
+[**3.0.6**](https://github.com/sacoq/ZaNet.Connect/releases/tag/v3.0.6-release) · [**Версия 3.0.5**](https://github.com/sacoq/ZaNet.Connect/releases/tag/v3.0.5) · [Все релизы](https://github.com/sacoq/ZaNet.Connect/releases)
 
 </div>
 
-## Скачать 3.0.6 Preview
+## Скачать 3.0.6
 
 | Платформа | Сборка | Требования |
 | :--- | :--- | :--- |
-| Windows | [Универсальный установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-preview/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r14.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
-| Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-preview/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
-| Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-preview/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-preview/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
+| Windows | [Универсальный установщик EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r14.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
+| Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
-Предварительная версия устанавливается вручную. На Windows и Android её можно установить рядом с 3.0.5. У неё своё хранилище профилей. Сохраните исходную ссылку подписки и импортируйте её в Preview. Для обычного обновления существующей установки используйте стабильный канал.
+Установите 3.0.6 вручную. На Windows и Android её можно установить рядом с 3.0.5. У 3.0.6 своё хранилище профилей. При первом запуске импортируйте исходную ссылку подписки.
 
 ## Что изменилось в 3.0.6
 
@@ -37,7 +37,7 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 ### Windows
 
-Универсальный установщик определяет архитектуру, выбирает подходящее ядро и при необходимости предлагает установить .NET Framework. Полный системный туннель может потребовать разрешения администратора. У установщика Preview нет подписи Authenticode, поэтому Windows может показать предупреждение о неизвестном издателе. Запуск приложения, импорт и локальный прокси доступны от обычного пользователя.
+Универсальный установщик определяет архитектуру, выбирает подходящее ядро и при необходимости предлагает установить .NET Framework. Полный системный туннель может потребовать разрешения администратора. У установщика 3.0.6 нет подписи Authenticode, поэтому Windows может показать предупреждение о неизвестном издателе. Запуск приложения, импорт и локальный прокси доступны от обычного пользователя.
 
 ### Android
 
@@ -49,7 +49,7 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 ## Обновления и проверка файлов
 
-Для стабильной Windows 3.0.5 доступны [EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Setup-Windows-x64.exe) и [MSI](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Windows-x64.msi). Обычные обновления стабильного канала устанавливаются поверх текущей версии с сохранением профилей. 3.0.6 Preview распространяется отдельными файлами и требует ручной установки.
+Для Windows 3.0.5 доступны [EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Setup-Windows-x64.exe) и [MSI](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.5/ZaNet-Connect-Windows-x64.msi). При переходе с 3.0.5 на 3.0.6 скачайте установщик со страницы релиза и импортируйте подписку в новое приложение. Android-сборка 3.0.6 подписана новым ключом и имеет отдельное имя пакета.
 
 Сверяйте SHA‑256 скачанного файла с `SHA256SUMS.txt` на странице соответствующего релиза. В Windows контрольную сумму можно вывести командой `Get-FileHash <файл> -Algorithm SHA256`, в Linux — `sha256sum <файл>`.
 
