@@ -14,9 +14,9 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 | Платформа | Сборка | VirusTotal | Требования |
 | :--- | :--- | :--- | :--- |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Сетевой EXE · 6,83 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Setup.exe) · [Офлайн EXE](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r15.exe) | [Офлайн EXE](https://www.virustotal.com/gui/file/4c3d2346b1413e3fd2ae61ca695bb652a2e592e59409b13977718cd9962967c5/detection) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | [APK](https://www.virustotal.com/gui/file/b2a44f49101d295d94d03bad39fbb57edd8cd07114046357e45708d2a4cf9481/detection) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | [x64](https://www.virustotal.com/gui/file/266df6185d9dc2051c335ae88c325362de114d94a80548c4a467fbd85eb65ce3/detection) · [ARM64](https://www.virustotal.com/gui/file/253adcf3fc03c0cca4c2c3733962bf59c6a8dfd1649ca667ddb71cf06e455f32/detection) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Сетевой EXE r17 · 6,83 МиБ](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Setup-r17.exe) · [Архив r17](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Payload-r17.zip) · [Офлайн r15](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-Windows-Universal-Setup-r15.exe) | [Офлайн r15 · 3/65](https://www.virustotal.com/gui/file/4c3d2346b1413e3fd2ae61ca695bb652a2e592e59409b13977718cd9962967c5/detection) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-Android-Universal.apk) | [APK · 4/50](https://www.virustotal.com/gui/file/b2a44f49101d295d94d03bad39fbb57edd8cd07114046357e45708d2a4cf9481/detection) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-x64-r4.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/download/v3.0.6-release/ZaNet-Connect-3.0.6-linux-arm64-r4.tar.gz) | [x64 · отчёт недоступен](https://www.virustotal.com/gui/file/266df6185d9dc2051c335ae88c325362de114d94a80548c4a467fbd85eb65ce3/detection) · [ARM64 · без срабатываний](https://www.virustotal.com/gui/file/253adcf3fc03c0cca4c2c3733962bf59c6a8dfd1649ca667ddb71cf06e455f32/detection) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
 Сетевой EXE загружает с GitHub архив приложения (181 МиБ) и проверяет SHA‑256. .NET Framework скачивается с Microsoft, только если его нет. Офлайн EXE содержит приложение и оба пакета .NET.
 
@@ -24,7 +24,13 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 Установите 3.0.6 вручную. На Windows и Android её можно установить рядом с 3.0.5. У 3.0.6 своё хранилище профилей. При первом запуске импортируйте исходную ссылку подписки.
 
+Офлайн r15 содержит предыдущую ревизию клиента. Для получения изменений r17 используйте сетевой установщик или архив r17. У r17 ещё нет отчёта VirusTotal.
+
 ## Что изменилось в 3.0.6
+
+В Windows r17 автоподбор проверяет до восьми профилей параллельно через HTTP GET. Импорт из файла или текста поддерживает полный Xray JSON, Clash YAML через Mihomo и sing-box JSON. В «Настройки → Режим и ядро → Версии Xray» можно загрузить список официальных выпусков, увидеть размер и выбрать одну из установленных версий. Выбор применяется при следующем подключении.
+
+Нативные профили Windows используют входы, DNS и маршрутизацию из самого файла. Подписки Clash и sing-box по URL, а также нативные профили этих форматов на Android и Linux в этой сборке недоступны.
 
 - **Ядро Xray 26.11.9** на всех трёх платформах. В Windows также доступны ZaNet Mihomo 3.0.0 на базе Mihomo 1.19.30 и sing-box 1.14.0 для системного туннеля.
 - **Экран подключения и список серверов обновлены.** В компактном окне Windows остаются видны список и кнопка подключения. В карточке подписки доступны описание, обновление и кнопки продления и поддержки, если они переданы провайдером. Разделы настроек представлены карточками с иконками.
