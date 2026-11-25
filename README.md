@@ -14,17 +14,24 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 | Платформа | Сборка | Требования |
 | :--- | :--- | :--- |
-| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн-установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Windows-Offline.exe) · [Сетевой установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Setup-Windows-x64.exe) | Windows 10 1809 или новее и .NET Framework 4.8 для x64/x86. Windows 11 и .NET Framework 4.8.1 для ARM64. |
+| <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Windows | [Офлайн-установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Windows-Offline.exe) · [Сетевой установщик](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Setup-Windows-x64.exe) | Windows 7 SP1, 8, 8.1 и Windows 10 до 1809 — x86/x64, .NET Framework 4.6.1 или новее.<br>Windows 10 1809 и новее — x86/x64, .NET Framework 4.8.<br>Windows 11 ARM64 — .NET Framework 4.8.1. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Android | [Универсальный APK](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Android-Universal.apk) | Android 7.0 (API 24) или новее. ARMv7, ARM64 и x86‑64. |
 | <img src="docs/brand/zanet-connect.png" width="24" height="24" alt=""> Linux | [x64](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Linux-x64.tar.gz) · [ARM64](https://github.com/sacoq/ZaNet.Connect/releases/latest/download/ZaNet-Connect-Linux-arm64.tar.gz) | Дистрибутив на glibc с X11 или XWayland, библиотеками X11, ICE, SM и Fontconfig. .NET и Xray входят в архив. |
 
 Офлайн EXE включает приложение, ядра и геобазы для всех трёх архитектур. Для установки нужна подходящая версия .NET Framework в Windows. Сетевой EXE загружает тот же офлайн-пакет с проверкой SHA‑256 и при необходимости предлагает скачать .NET с сайта Microsoft.
 
-Установите 3.0.6 вручную. На Windows и Android её можно установить рядом с 3.0.5. У 3.0.6 своё хранилище профилей. При первом запуске импортируйте исходную ссылку подписки.
+Сборка Windows 3.0.7 r4 устанавливается поверх 3.0.6 или 3.0.7 с сохранением подписок и настроек. Запустите свежий установщик вручную. Если сетевой EXE был скачан до r4, скачайте его ещё раз.
+
+## Что изменилось в 3.0.7 r4
+
+- Windows. Установщик выбирает ядра Xray 26.11.9, Mihomo и sing-box по версии Windows и архитектуре. Исправлен запуск ядер в 32-разрядном клиенте.
+- Автоподбор проверяет до семи серверов одновременно через HTTP GET и сохраняет выбор после повторной успешной проверки. Сетевые параметры Windows и подписки сохраняются.
+
+Матрица совместимости, установка поверх 3.0.7 и работа ядер x86/x64 проверены на Windows 11. Проверка установки и Wintun на самих Windows 7, 8 и 8.1 ещё не выполнена. Для старых Windows нужны [системные обновления](https://github.com/XTLS/go-win7#compatibility).
 
 ## Что изменилось в 3.0.6
 
-В Windows автоподбор проверяет до восьми профилей параллельно через HTTP GET. Импорт из файла или текста поддерживает полный Xray JSON, Clash YAML через Mihomo и sing-box JSON. В «Настройки → Режим и ядро → Версии Xray» можно загрузить список официальных выпусков, увидеть размер и выбрать одну из установленных версий. Выбор применяется при следующем подключении.
+Импорт из файла или текста поддерживает полный Xray JSON, Clash YAML через Mihomo и sing-box JSON. В «Настройки → Режим и ядро → Версии Xray» можно загрузить список официальных выпусков, увидеть размер и выбрать одну из установленных версий. Выбор применяется при следующем подключении.
 
 Нативные профили Windows используют входы, DNS и маршрутизацию из самого файла. Подписки Clash и sing-box по URL, а также нативные профили этих форматов на Android и Linux в этой сборке недоступны.
 
@@ -63,11 +70,11 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 ### Windows
 
-Оба установщика определяют архитектуру и выбирают подходящее ядро.
+Оба установщика определяют версию Windows и архитектуру. Сетевой установщик при необходимости скачивает .NET Framework с сайта Microsoft. Для офлайн-установки .NET Framework должен быть уже установлен.
 
 В обоих Windows-установщиках можно выбрать папку и следить за ходом установки. В конце доступны ярлыки в «Пуск» и на рабочем столе, а также запуск приложения. Клиент по умолчанию запрашивает права администратора при новом запуске. Ссылки `zanet://` добавляют подписку в уже открытый клиент.
 
-Установщики 3.0.6 используют внутреннюю проверку SHA‑256 и целостности файлов. Windows может показать предупреждение о неизвестном издателе, поскольку у EXE нет подписи Authenticode.
+Установщики используют внутреннюю проверку SHA‑256 и целостности файлов. Windows может показать предупреждение о неизвестном издателе, поскольку у EXE нет подписи Authenticode.
 
 ### Android
 
@@ -81,7 +88,7 @@ VPN-клиент для Windows, Android и Linux. Подключайтесь п
 
 При переходе с 3.0.5 на 3.0.6 скачайте установщик со страницы релиза и импортируйте подписку в новое приложение. Android-сборка 3.0.6 подписана новым ключом и имеет отдельное имя пакета.
 
-GitHub показывает SHA‑256 рядом с каждым файлом. В Windows контрольную сумму можно вывести командой `Get-FileHash <файл> -Algorithm SHA256`, в Linux — `sha256sum <файл>`.
+В релизе есть файл SHA-256 и его подпись. GitHub также показывает SHA‑256 рядом с каждым файлом. В Windows контрольную сумму можно вывести командой `Get-FileHash <файл> -Algorithm SHA256`, в Linux — `sha256sum <файл>`.
 
 ## Поддержка
 
